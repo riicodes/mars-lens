@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+	<div class="container">
+		<div class="row">
+			{% for photo in photos %}
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<div class="card">
+						<img src="{{ photo.img_src }}" alt="mars rovers images" class="img-fluid">
+						<div class="card-body">
+							<h5 class="card-title">{{ photo.rover.name }} #{{ photo.id }}</h5>
+							<p class="card-text">
+								<em>
+									This is photo #{{ photo.id }}, taken on Sol {{ photo.sol }}
+									of {{ photo.rover.name }}
+									mission (Earth date: {{ photo.earth_date }})
+								</em>
+							</p>
+							<a href="{{ photo.img_src }}" class="btn btn-outline-dark" target="_blank">View Full
+								Image</a>
+						</div>
+					</div>
+
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+{% endblock content %}

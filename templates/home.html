@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+	{% if error %}
+		<div class="alert alert-info alert-dismissible fade show" role="alert">
+			{{ error }}
+			<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+		</div>
+	{% endif %}
+	<main class="main-container text-center">
+		<h1><strong>Mars Lens</strong></h1>
+		<h2>Get latest pictures from the mars mission</h2>
+		<div class="row mx-3">
+			<div class="col-xs-12 col-sm-6 col-lg-3">
+				<div class="card">
+					<img src="{% static 'images/perseverance.jpg' %}" alt="persevarance rover"
+						 class="img-fluid">
+					<div class="card-body">
+						<h5 class="card-title"><a href="/perseverance" class="stretched-link">Perseverance</a></h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-lg-3">
+				<div class="card">
+					<img src="{% static 'images/curiosity.jpg' %}"
+						 alt="curiosity rover"
+						 class="img-fluid">
+					<div class="card-body">
+						<h5 class="card-title"><a href="/curiosity" class="stretched-link">Curiosity</a></h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-lg-3">
+				<div class="card">
+					<img src="{% static 'images/spirit.jpg' %}"
+						 alt="spirit rover"
+						 class="img-fluid">
+					<div class="card-body">
+						<h5 class="card-title"><a href="/spirit" class="stretched-link">Spirit</a></h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-lg-3">
+				<div class="card">
+					<img src="{% static 'images/opportunity.jpg' %}"
+						 alt="opportunity rover"
+						 class="img-fluid">
+					<div class="card-body">
+						<h5 class="card-title"><a href="/opportunity" class="stretched-link">Opportunity</a></h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+{% endblock content %}
