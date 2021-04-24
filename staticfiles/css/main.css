@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap');
+
+body {
+    font-family: 'Baloo Thambi 2', cursive;
+}
+
+.navbar-brand {
+    font-family: 'Pacifico', cursive;
+}
+
+.main-container h1 {
+    padding-top: 80px;
+    color: black;
+}
+.main-container h2{
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+}
+.container {
+    padding-top: 15px;
+}
+
+.card {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.alert {
+    margin-bottom: 0;
+}
+
+.card a{
+    text-decoration: none;
+    color: navy;
+}
